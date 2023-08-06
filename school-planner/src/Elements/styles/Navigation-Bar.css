@@ -1,0 +1,9 @@
+#navBarDiv {
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

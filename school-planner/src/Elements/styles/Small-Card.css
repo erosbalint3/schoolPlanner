@@ -1,0 +1,29 @@
+.smallCard {
+    width: 98%;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+    display: flex;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallCard > p {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.smallCardInnerBlock {
+    background-color: #2D313E;
+    height: 90%;
+    margin-right: 20px;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
