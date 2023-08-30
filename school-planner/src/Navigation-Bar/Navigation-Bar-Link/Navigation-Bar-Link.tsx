@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Navigation-Bar-Link.css';
+import './Navigation-Bar-Link.css';
 
 function NavBarLink({ link, name } : { link: string, name: string }) {
     return (

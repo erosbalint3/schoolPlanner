@@ -1,0 +1,26 @@
+#CalendarButtonDiv {
+    display: flex;
+    gap: 15px;
+}
+
+#CalendarDaysDiv {
+    margin: 0 auto;
+}
+
+.BigCalendarButton {
+    width: 150px;
+    gap: 20px;
+    text-align: center;
+    line-height: 1em;
+    font-size: 20px;
+}
+
+.BigCalendarButton span {
+    text-align: center;
+    width: 100%;
+}
+
+.SmallCalendarButton img {
+    width: 30px;
+    height: 30px;
+}

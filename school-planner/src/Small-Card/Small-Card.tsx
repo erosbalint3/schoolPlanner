@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Small-Card.css';
+import './Small-Card.css';
 import { CardType } from '../Enums/Small-Card-Type';
 
 const SmallCard = ({ text, value, type } : { text: string, value: number, type: CardType }) => {

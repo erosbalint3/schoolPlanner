@@ -1,10 +1,11 @@
 .mainCardDiv {
     width: 800px;
-    height: 400px;
+    height: auto;
     background-color: #434C5F;
     border-radius: 15px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
 }

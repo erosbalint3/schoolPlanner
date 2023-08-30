@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/Navigation-Bar.css';
-import NavBarLink from './Navigation-Bar-Link';
+import './Navigation-Bar.css';
+import NavBarLink from './Navigation-Bar-Link/Navigation-Bar-Link';
 
 function NavBar() {
     return (

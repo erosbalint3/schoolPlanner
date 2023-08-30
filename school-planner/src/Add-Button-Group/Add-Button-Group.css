@@ -1,0 +1,46 @@
+button {
+    background-color: #d9d9d9;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+.addButton {
+    width: 360px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#AddExamButton {
+    width: 95%;
+    height: 180px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+button p {
+    font-size: 30px;
+    margin-bottom: 0;
+}
