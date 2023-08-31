@@ -7,21 +7,30 @@
 }
 
 #gradesDiv {
-    flex-grow: 2;
+    
     height: 90vh;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
+    
     background-color: #434C5F;
     min-width: 900px;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+#outer {
+    overflow: hidden;
+    flex-grow: 3;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 #addGradeDiv {
     height: 90vh;
+    padding-bottom: 10px;
     margin-right: 10px;
     margin-top: 10px;
     border-radius: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
     background-color: #434C5F;
     min-width: 400px;
 }

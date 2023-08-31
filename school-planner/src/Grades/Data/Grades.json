@@ -20,6 +20,27 @@
             "grade": "3",
             "percentage": "60%",
             "date": "2022.04.03"
+        },
+        {
+            "subject": "Magyar nyelv",
+            "name": "2.zh",
+            "grade": "3",
+            "percentage": "60%",
+            "date": "2022.04.03"
+        },
+        {
+            "subject": "Zene",
+            "name": "2.zh",
+            "grade": "3",
+            "percentage": "60%",
+            "date": "2022.04.03"
+        },
+        {
+            "subject": "Matematika",
+            "name": "4.zh",
+            "grade": "3",
+            "percentage": "60%",
+            "date": "2022.04.03"
         }
     ],
     "showDropDownElements" : [
@@ -33,6 +54,18 @@
         },
         {
             "id": 2,
+            "show": false
+        },
+        {
+            "id": 3,
+            "show": false
+        },
+        {
+            "id": 4,
+            "show": false
+        },
+        {
+            "id": 5,
             "show": false
         }
     ] 
