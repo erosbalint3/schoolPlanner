@@ -1,0 +1,23 @@
+.Grade {
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 98%;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.Grade div {
+    height: 30px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #2D313E;
+    color: white;
+}

@@ -1,0 +1,28 @@
+{
+    "grade":[
+        {
+            "subject": "Matematika",
+            "name": "1.zh",
+            "grade": "5",
+            "percentage": "98%",
+            "date": "2022.02.23"
+        },
+        {
+            "subject": "Angol C1",
+            "name": "3.zh",
+            "grade": "4",
+            "percentage": "78%",
+            "date": "2023.02.23"
+        }
+    ],
+    "showDropDownElements" : [
+        {
+            "id": 0,
+            "show": false
+        },
+        {
+            "id": 1,
+            "show": false
+        }
+    ] 
+}
