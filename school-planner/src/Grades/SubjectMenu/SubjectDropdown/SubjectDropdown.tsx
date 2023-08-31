@@ -6,9 +6,10 @@ interface SubjectDropDownProps {
     grades: Grade[];
     showDropDown: boolean;
     toggleDropDown: Function;
+    subject: string;
 }
 
-const SubjectDropdown = ({grades} : SubjectDropDownProps) => {
+const SubjectDropdown = ({grades, subject} : SubjectDropDownProps) => {
     const [showDropDown, setShowDropDown] = useState<boolean>(false);
 
     useEffect(() => {
@@ -19,10 +20,12 @@ const SubjectDropdown = ({grades} : SubjectDropDownProps) => {
         <div className="Grade">
             {grades.map((grade: Grade, index: number) => {
                 return (
-                    <div key={index}>
-                        {grade.name} - {grade.grade} - {grade.percentage} - {grade.date.toLocaleDateString()}
-                    </div>
-                );
+                    (grade.subject === subject) && (
+                        <div key={index}>
+                            {grade.name} - {grade.grade} - {grade.percentage} - {grade.date.toLocaleDateString()}
+                        </div>
+                    )   
+                )
             })}
         </div>
     );

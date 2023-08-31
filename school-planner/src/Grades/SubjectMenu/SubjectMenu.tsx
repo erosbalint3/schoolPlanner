@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Grades from '../Data/Grades.json';
 import './SubjectMenu.css';
 import SubjectDropdown from "./SubjectDropdown/SubjectDropdown";
@@ -25,6 +25,7 @@ const SubjectMenu = () => {
     }
 
     const [showDropDown, setShowDropDown] = useState(showDropDownElement());
+    let usedSubjects: string[] = [];
     const grades = () => {
         let gradesList: Grade[] = [];
         Grades.grade.map((grade) => {
@@ -59,19 +60,29 @@ const SubjectMenu = () => {
         );
     }
 
+    const containedSubject = (grade: Grade): boolean =>  {
+        if (!usedSubjects.includes(grade.subject)) {
+            usedSubjects.push(grade.subject);
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     return (
         <tbody id="gradeList">{grades().map((grade: Grade, index: number) => {
             return(
-                <div className="Subject" onClick={(): void => toggleDropDown(index)} onBlur={(e: React.FocusEvent<HTMLDivElement>): void => dismissHandler(e)}>
-                    <div className="SubjectDropDownTitle">
-                        <div>{grade.subject}</div>
-                        <img src={DownArrow} alt="DownArrow" />
+                (!containedSubject(grade) && (
+                    <div className="Subject" onClick={(): void => toggleDropDown(index)} onBlur={(e: React.FocusEvent<HTMLDivElement>): void => dismissHandler(e)}>
+                        <div className="SubjectDropDownTitle">
+                            <div>{grade.subject}</div>
+                            <img src={DownArrow} alt="DownArrow" />
+                        </div>
+                        {showDropDown[index].show && (
+                            <SubjectDropdown grades={grades()} toggleDropDown={(): void => toggleDropDown(index)} showDropDown={false} subject={grade.subject}/>
+                        )}
                     </div>
-                    {showDropDown[index].show && (
-                        <SubjectDropdown grades={grades()} toggleDropDown={(): void => toggleDropDown(index)} showDropDown={false}/>
-                    )}
-                </div>
-            )  
+                )))  
         })
     }</tbody>
     );
