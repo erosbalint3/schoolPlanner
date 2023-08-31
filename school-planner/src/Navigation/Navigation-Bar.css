@@ -7,3 +7,12 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+#centeredNavBarSpan {
+    background-color: #090A26;
+    border-radius: 10px;
+    width: 99%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }

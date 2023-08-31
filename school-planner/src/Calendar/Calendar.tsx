@@ -4,6 +4,7 @@ import CalendarDayList from './DayDiv/Calendar-Day-List';
 import LeftArrow from '../Images/left-chevron.png';
 import RightArrow from '../Images/right-chevron.png';
 import ReactDOM from 'react-dom';
+import CalendarNote from './CalendarNote/CalendarNote';
 
 interface CalendarProps {
     onMonthSwitch:() => void;
@@ -48,6 +49,7 @@ const Calendar = () => {
             </div>
             <div id='CalendarDaysDiv'>
                 <CalendarDayList onIncreaseMonth={onIncreaseMonth} onReduceMonth={onReduceMonth} increaseMonthText={increaseMonthText} reduceMonthText={reduceMonthText}/>
+                <CalendarNote />
             </div>
         </div>
     );

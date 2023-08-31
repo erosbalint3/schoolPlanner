@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import NavBar from '../Navigation-Bar/Navigation-Bar';
 import MainCard from '../Main-Card/Main-Card';
 import SmallCard from '../Small-Card/Small-Card';
 import { CardType } from '../Enums/Small-Card-Type';
@@ -10,8 +9,6 @@ import Calendar from '../Calendar/Calendar';
 function Home() {
   return (
     <div id='HomeScreenDiv'>
-      <div id='centeredNavBarSpan'>
-        <NavBar></NavBar>
         <div id='mainCardsDiv'>
           <MainCard>
             <SmallCard text='Weighted Average:' value={5} type={CardType.AVERAGE}></SmallCard>
@@ -29,7 +26,6 @@ function Home() {
           </MainCard>
         </div>
       </div>
-    </div>
   );
 }
 
